@@ -373,12 +373,15 @@ body {
 
 .service-image {
     width: 100%;
+    max-width: 240px;
     aspect-ratio: 16 / 9;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    margin-bottom: var(--spacing-md);
+    margin: 0 auto var(--spacing-md) auto;
     background-color: var(--color-bg-tertiary);
     position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-image img {
@@ -587,13 +590,15 @@ body {
 }
 
 .sns-thumbnail {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* 正方形の比率 */
-    border-radius: 8px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto var(--spacing-md) auto;
+    border-radius: 50%;
     overflow: hidden;
-    margin-bottom: var(--spacing-sm);
     background-color: var(--color-bg-tertiary);
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .sns-thumbnail img {
